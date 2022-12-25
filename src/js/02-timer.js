@@ -44,6 +44,7 @@ const logger = timerFinish => {
     let counter = timerFinish - now.getTime();
 
     if (counter <= 0) {
+        Notiflix.Notify.success('Time is out');
         clearInterval(timerId);
         btnStart.setAttribute("disabled", "");
         return;
