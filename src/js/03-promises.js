@@ -7,9 +7,9 @@ function createPromise(position, delay) {
 
     setTimeout (()=> {
           if (shouldResolve) {
-            res(`✅ Fulfilled promise ${position} in ${delay}ms`);
+            res(`Fulfilled promise ${position} in ${delay}ms`);
           } else {
-            rej(`❌ Rejected promise ${position} in ${delay}ms`);
+            rej(`Rejected promise ${position} in ${delay}ms`);
           }
     }, delay);
   })
